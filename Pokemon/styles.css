@@ -1,0 +1,102 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #000040, #000216);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.dropdown {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #ef5350;
+  box-shadow: 0 0 8px rgba(239, 83, 80, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.card {
+  width: 160px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 6px solid #FFA500;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.712);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card p {
+  margin: 4px 0;
+  font-weight: 500;
+  padding: 0;
+  color: #333;
+}
+
+#loadMore {
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#loadMore:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 120px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  input, select {
+    width: 90%;
+  }
+}
